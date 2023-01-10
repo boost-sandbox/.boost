@@ -1,15 +1,15 @@
 name: boostsecurity.io (extra modules)
-# on:
+on:
 #   workflow_dispatch:
 #   push:
 #     branches:
 #       - main
-#   pull_request:
-#     branches:
-#       - main
-#     types:
-#       - opened
-#       - synchronize
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - synchronize
 jobs:
   boost-sast:
     name: SAST
